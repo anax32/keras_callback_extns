@@ -73,4 +73,4 @@ class WeightWriter (Callback):
     
     # write the images
     for name, image in images:
-      save_image (join (self.dir, ".".join ([name,  str (epoch), "png"])), image)
+      save_image (join (self.dir, ".".join ([name,  str (epoch).zfill (4), "png"])), image)
